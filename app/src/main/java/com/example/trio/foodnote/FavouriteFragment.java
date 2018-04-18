@@ -12,10 +12,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.trio.foodnote.adapter.FavouriteAdapter;
 import com.example.trio.foodnote.utilities.FavouriteData;
+
+import java.util.ArrayList;
 
 
 /**
@@ -33,6 +36,9 @@ public class FavouriteFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     private RecyclerView rv_favourite;
+    private RelativeLayout view_empty;
+    private ArrayList<Integer> data;
+
     FavouriteAdapter favouriteAdapter;
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -43,11 +49,12 @@ public class FavouriteFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        data = FavouriteData.getData();
 
-
+        view_empty = (RelativeLayout) getActivity().findViewById(R.id.view_empty);
         rv_favourite = (RecyclerView) getActivity().findViewById(R.id.rv_favourite);
 
-        favouriteAdapter = new FavouriteAdapter(getActivity(), FavouriteData.getData());
+        favouriteAdapter = new FavouriteAdapter(getActivity(), data);
         rv_favourite.setAdapter(favouriteAdapter);
         rv_favourite.setLayoutManager(new GridLayoutManager(getActivity(), 2));
     }
@@ -133,6 +140,13 @@ public class FavouriteFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        favouriteAdapter.notifyDataSetChanged();
+        if(data.size() > 0) {
+            favouriteAdapter.notifyDataSetChanged();
+            rv_favourite.setVisibility(View.VISIBLE);
+            view_empty.setVisibility(View.GONE);
+        } else {
+            rv_favourite.setVisibility(View.GONE);
+            view_empty.setVisibility(View.VISIBLE);
+        }
     }
 }
