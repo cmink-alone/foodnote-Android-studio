@@ -1,0 +1,398 @@
+<resources>
+    <string name="app_name">Food Note</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="recipe_names">
+        <item>Roast beef with caramelized onion gravy</item>
+        <item>Chocolate and Avocado Mousse</item>
+        <item>Banana Ice cream</item>
+        <item>Courgetti Spaghetti and Turkey Meatballs</item>
+        <item>Bavette Steak with Rosemary Chimichurri</item>
+        <item>Peanut butter and raspberry jam pancakes</item>
+        <item>Teriyaki Salmon</item>
+        <item>Prawn Waldorf Salad</item>
+        <item>Grilled Salmon with Garlic Mushroom and Lentil Salad</item>
+        <item>Honey Glazed Ham</item>
+        <item>Raspberry Millefeuille</item>
+        <item>Spicy Beef Salad</item>
+        <item>Cheesecake in Jam Jar</item>
+        <item>Pineapple Dessert Recipe with Caramel</item>
+        <item>Steak Sandwiches</item>
+        <item>Ice Cream Sandwich</item>
+        <item>Coconut Pancake with Mango Slices and Lime Syrup</item>
+        <item>Jerk Chicken</item>
+        <item>Stuffed Pork Tenderloin</item>
+        <item>Stuffed Roast Chicken</item>
+    </string-array>
+    <string-array name="recipe_directions">
+        <item>Rub the garlic halves and thyme leaves all over the beef. Place the joint in a large dish, drizzle over the olive oil, then rub it into the meat all over. Cover and leave to marinate in the fridge for 1–2 days before you cook it (you don’t have to marinate the beef in advance, but it does make it super tasty! – see Tip). Take the beef out of the fridge about an hour before cooking, to let it come up to room temperature.
+\n\nPreheat the oven to 190°C/170°C fan/Gas 5.
+\n\nPreheat a dry frying pan until very hot, then sear the beef over a high heat until it’s coloured on all sides. Place the beef in a large, hob-proof roasting tray with the garlic halves and the thyme sprig and roast for about 45 minutes for medium rare (or until it reaches 45–47°C in the centre, if you have a meat thermometer). Add 10–12 minutes for medium (or until it reaches 55–60°C in the centre), or add about 20 minutes if you like it well done (or until it reaches 65–70°C in the centre).
+\n\nTransfer the beef to a warm platter, cover loosely with foil and leave to rest for at least 20 minutes, and anything up to 40 minutes, before serving.
+\n\nMeanwhile, to make the gravy, place the roasting tray over a low heat on the hob, add the onions to the juices in the tray and cook gently for about 20 minutes, stirring occasionally, until really soft and caramelised. Stir in the flour until combined, then whisk in the red wine, making sure there are no lumps. Bring to the boil, whisking, then bubble rapidly until the red wine has reduced by half. Stir in the hot stock, then cook over a medium heat for about 8 minutes, stirring occasionally, until reduced to a thick gravy.
+\n\nCarve the beef thinly and pour the gravy into a warm jug. Serve with Yorkshire Puddings and steamed chard.
+</item>
+        <item>Put the avocados into a food processor and blend until smooth.
+\n\nAdd 3 tablespoons of the honey with the vanilla and cacao powder and blend again until completely combined. Taste and add more honey if necessary.
+\n\nSpoon the mousse into 8 shot or sweet wine glasses and put them into the fridge for an hour before serving.
+</item>
+        <item>Slice the banana into chunks and put them into a freezer-proof container. Put the container into the freezer and leave overnight or until frozen solid.
+\n\nWhen ready to make the ice cream, put the frozen banana pieces into a food processor and pulse to break them up into small pieces. Scrape down the sides of the food processor, then blend until the banana is smooth and creamy, stopping regularly to scrape down the sides.
+\n\nEat immediately for a soft-serve consistency or put it back into a freezer-proof container and freeze for 1 hour until hard.
+</item>
+        <item>Using a spiralizer, julienne peeler or mandolin, turn the 4 courgettes into spaghetti. Put to one side until ready to cook.
+\n\nPut the turkey mince into a mixing bowl with the chopped onion, garlic, Worcestershire sauce, beaten egg and a good pinch of salt and pepper. Mix everything together until thoroughly combined.
+\n\nWith wet hands, roll the mixture into 20 meatballs and put them on to a plate. Cover with cling film and chill in the fridge for 30 minutes.
+\n\nMeanwhile, make the tomato sauce. Place a large frying pan over a medium heat and add a dash of olive oil. Once hot, add the onion and sauté for 5–6 minutes until soft, then add the garlic and cook for a further minute.
+\n\nStir in the tomato purée and continue to cook for 2 minutes, then add the chopped tomatoes, oregano, balsamic vinegar and a good pinch of salt and pepper. Stir everything together and leave to simmer for 10 minutes, until slightly thickened.
+\n\nTo cook the meatballs, place a frying pan over a medium heat and add a dash of oil. Once hot, brown the meatballs in batches, turning frequently so they colour on all sides. Transfer to the pan with the tomato sauce to cook for a further 10 minutes until cooked through, turning from time to time. (If the sauce becomes too thick, add 50–100ml of water.)
+\n\nAdd an extra teaspoon of oil to the frying pan the meatballs were browned in and gently sauté the courgette spaghetti over a medium heat, tossing occasionally, for 3–5 minutes, until soft but with a slight bite.
+\n\nDivide the courgette spaghetti between serving bowls and top with the meatballs. Sprinkle with Parmesan, if using.
+</item>
+        <item>Mix together the parsley, oregano, garlic, rosemary, chilli, red wine vinegar and a third of the oil. Season with a little salt and pepper then leave to infuse for approximately 2 hours.
+\n\nWhen ready to cook, heat a large griddle pan over a high heat.
+\n\nBrush the steak on both sides with the remaining oil, then, when the griddle is smoking hot, carefully put it on to the pan and fry for 4 minutes on each side. Remove the steak, wrap in tin foil and leave to rest
+\n\nPut the sliced mushrooms on to the griddle in a single layer and cook for 2 minutes on each side. Take the mushrooms off the griddle, then add the tomatoes and cook for approximately 2 minutes as well
+\n\nCarve the steak against the grain into long, thin slices and arrange the slices on a serving platter. Drizzle with a generous amount of chimichurri sauce and serve with the mushrooms, tomatoes and watercress
+</item>
+        <item>Mix the peanut butter, eggs, yoghurt and raspberry jam together in a bowl until well combined. The mixture should be a thick dropping consistency
+\n\nPlace a large frying pan over a medium heat. Add the rapeseed oil and heat, swirling around the pan to coat. Add a heaped tablespoon of the mixture to the pan and spread until it is the thickness of a Scotch pancake. Cook for 2–3 minutes, until lightly coloured, then turn over and repeat on the other side
+\n\nKeep the pancakes warm in a low oven or wrapped in a tea towel while you cook the rest of the mixture
+\n\nServe with the sliced banana and extra dollops of jam, as well as a drizzle of maple syrup, if desired.
+</item>
+        <item>Put the ginger and garlic into a bowl and mix with the soy sauce, maple syrup, mirin and a drizzle of olive oil
+\n\nPlace the salmon fillets in a dish, season with salt and pepper and pour the sticky dressing over them. Cover with cling film and set aside in the fridge to marinate for up to 2 hours, but at least 20 minutes
+\n\nPlace a large frying pan over a medium heat and add a dash of oil. When hot, add the salmon, skin side down, reserving the marinade. Cook for 2 minutes, then pour in the reserved marinade and cook for
+a further minute or so, until the salmon fillets are opaque halfway up the sides. Turn them over and cook on the other side for 3–4 minutes, basting with the sauce so that the salmon is well coated. Add a splash of water if the sauce is too thick
+\n\nServe the salmon fillets on individual plates, spooning over any teriyaki sauce left in the pan
+</item>
+        <item>Start by making the dressing; whisk together all the ingredients in a small mixing bowl. Taste and adjust the seasoning as necessary, adding a little more lemon juice if required
+\n\nToast the walnuts in a dry frying pan over a medium heat for 2–3 minutes until golden
+\n\nPut the shredded lettuce leaves into a large mixing bowl and add the prawns, celery, apple and grapes. Spoon in the dressing and toss to coat. Taste and adjust the seasoning as necessary before serving
+</item>
+        <item>Put the lentils into a large saucepan along with the bay leaf, thyme and stock (or water). Bring to the boil over a medium-high heat, then reduce to a simmer. Simmer for 15–20 minutes until tender
+\n\nIn the meantime, heat a large heavy-based frying pan over a medium-high heat and add the olive oil. Once hot, add the mushrooms with a pinch of salt and cook in the pan for 6–8 minutes, stirring now and again, until soft and lightly caramelized on the edges
+\n\nAdd the chopped garlic and continue to cook for 2 minutes, then remove the pan from the heat
+\n\nOnce the lentils are tender, drain well and discard the herbs. Put the lentils into a large mixing bowl and add the mushrooms. Mix together gently to avoid breaking up the lentils too much
+\n\nTo make the dressing, put all the ingredients into a clean jam jar with a pinch of salt and pepper. Close the lid of the jar and shake until the dressing comes together and emulsifies
+\n\nPreheat the grill to high. Grill the salmon for 6–8 minutes to your liking
+\n\nPour half the dressing over the warm lentils and toss gently to ensure everything is coated. Fold in the rocket, place the salmon on top and pour over the remaining dressing. Serve immediately.
+</item>
+        <item>Put the gammon into a large saucepan and pour on enough cold water to cover. Add the carrots, leek, onion, peppercorns, coriander seeds, cinnamon stick and bay leaves. Bring to the boil, turn down to a simmer and cook for 3 hours, topping up with more boiling water if necessary. Skim off the froth and any impurities that rise to the surface from time to time. If cooking in advance, leave the ham to cool in the stock overnight. Otherwise, allow it to cool a little, then remove from the pan. Strain the stock (and save for soups, sauces, etc.).
+\n\nTo make the glaze, put the sugar, Madeira, sherry vinegar and honey into a pan and stir over a low heat. Bring to the boil, lower the heat and simmer for 3–4 minutes, until you have a glossy dark syrup. Do not leave unattended, as it can easily boil over
+\n\nPreheat the oven to 190°C/Gas 5. Lift the ham onto a board. Snip and remove the string and then cut away the skin from the ham, leaving behind an even layer of fat. Lightly score the fat all over in a criss-cross, diamond pattern, taking care not to cut into the meat. Stud the centre of each diamond with a clove. \n\n
+\n\nPut the ham into a roasting tin and pour half of the glaze over the surface. Roast for 15 minutes. 
+\n\nPour on the rest of the glaze and return to the oven for another 25–35 minutes until the ham is golden brown, basting with the pan juices frequently. It also helps to turn the pan as you baste to ensure that the joint colours evenly. \n\n
+\n\nRemove from the oven and leave to rest for 15 minutes before carving and serving with the accompaniments.
+</item>
+        <item>Preheat the oven to 220°C/Gas 7.
+\n\nUnroll the pastry and place on a non-stick baking tray. Dust generously with icing sugar and bake in the preheated oven for 8 minutes, then reduce the temperature to 200°C/Gas 6 and cook for a further 7–12 minutes until the pastry is golden and glazed. Remove and leave to cool slightly on a wire rack.
+\n\nMeanwhile, mix the vanilla seeds into the cream. Add the 3 tablespoons of sugar and whip the mixture until it forms soft peaks. (Don’t overbeat or it will separate.) Add the orange zest and liqueur and fold in using a spatula
+\n\nSpoon the cream into a piping bag fitted with a plain nozzle, twisting slowly to move the cream to the pointed end. Chill until ready to use.
+\n\nWhen the pastry has cooled, slice it very gently into 3 equal-sized lengths with a bread knife.
+Assemble the millefeuille just before serving. Take the piping bag from the fridge, add a dot of cream to the serving plate to act as ‘glue’ and put a piece of pastry on top. Pipe a layer of cream over the pastry and add a border of raspberries around the outer edges. Pipe another layer of cream inside the raspberry border, then top with another layer of pastry and repeat the cream and raspberry stages. Finish with a top layer of pastry. Serve immediately, dusted with more icing sugar.
+</item>
+        <item>Season the steaks generously on both sides, pushing the seasoning into the meat. Add a dash of oil to a hot pan and fry the steaks over a high heat on either side for 2-3 minutes (medium rare). Hold the fat side of the steaks against the pan to render the fat. When cooked to your liking, remove the steaks from the heat and leave to rest, pouring any cooking juices on top
+\n\nTo make the dressing, put the garlic and chilli in a mortar with a pinch of salt and grind to a paste. Add the sugar, fish sauce and lime juice and stir with a spoon. Taste, add a little more lime juice if needed,and set aside
+\n\nMeanwhile, using a vegetable peeler, cut the carrots into ribbons. Place in a bowl with the radishes, tomatoes, mint, shallot, spring onions, cucumber and lettuce. Add about 4-6 tablespoons of the dressing and mix well to combine
+\n\nThickly slice the steak at an angle. Toast the peanuts with a pinch of salt for a few minutes in a clean dry pan and roughly chop. Place the steak on top of the salad and scatter over the chopped peanuts. Drizzle over the remaining dressing and serve immediately.
+</item>
+        <item>Toast the almonds in a dry frying pan over a medium heat for 3–4 minutes, until they smell nutty and toasted. Leave to cool slightly
+\n\nPour the toasted almonds into a food processor and blitz until finely chopped. Add the coconut oil and sugar and blend until completely incorporated
+\n\nDivide the mixture between four small jam jars and press down to make a firm base. Place the jars in the fridge to firm up while you make the topping
+\n\nPut the cream cheese and yoghurt into a mixing bowl and beat together with a wooden spoon. Once mixed, add 1 tablespoon of the coconut sugar, maple syrup or honey, with the lemon juice, vanilla and a pinch of salt. Mix again and taste, adding the remaining sugar, honey or maple syrup, if needed
+\n\nStir half the blueberries into the topping and roughly mix so that they aren’t completely broken up but instead give a swirling pattern to the mixture
+\n\nRemove the jam jars from the fridge and divide the topping mixture between them, filling each one until there is a 2cm gap from the top. Tap the bottom of the jars gently on the work surface to level out the filling
+\n\nDivide the remaining blueberries between the jars, making sure you don’t over-fill them if you plan to put the lids on for transportation
+\n\nReturn the jars to the fridge and chill for at least an hour to firm up
+\n\nServe the cheesecakes straight from the fridge with teaspoons, or put them into a cool bag to take with you on a picnic
+</item>
+        <item>First prepare the pineapple. Using a serrated knife, cut off the top and base, then cut the pineapple into 8 long wedges. Cut along the inside edge of the wedges to remove the core. Slice between the flesh and the skin as you would a piece of melon but leave the last 2cm of skin attached
+\n\nHeat a griddle pan. Place the pineapple wedges in the hot pan, pushing the fruit against the griddle bars to help it colour. Cook for 2 minutes on each side until marked. Sprinkle over a little caster sugar 1 minute before the end of cooking to glaze the fruit
+\n\nTo make the caramel, tip the 4 tablespoons of caster sugar, the vanilla seeds and five-spice powder into a heavy-based frying pan and cook over a medium heat for 3–4 minutes until the sugar has dissolved and is turning a dark golden brown. Remove from the heat, add the butter and 2 tablespoons of the cream. Shake the pan to melt the butter, whisk to combine, then add the remaining cream
+\n\nTo serve, drizzle the caramel sauce over the pineapple wedges and serve immediately
+</item>
+        <item>Preheat the oven to 200°C/Gas 6
+\n\nHeat a large ovenproof frying pan until hot and add a glug of oil. Grind a generous amount of salt and pepper onto a board and roll the fillet in the seasoning. Fry over a high heat for 1–2 minutes on each side until gently coloured all over, including the ends. Add the garlic and thyme sprigs, heat for a minute, then sit the beef on top of them. Add a couple of knobs of butter, spooning it over the steak to baste
+\n\nPlace the beef in the preheated oven and roast for 15–17 minutes until rare or medium rare. It should feel springy when pressed. Remove from the oven, cover loosely with foil and leave to rest for 15 minutes, basting now and again with the juices from the pan
+\n\nMeanwhile, make the relish. Heat the olive oil in a large frying pan, add the onion and chillies and fry over a medium heat for about 5 minutes until softened. Stir in the tomatoes, then season and cook for 6–8 minutes until the tomatoes are beginning to collapse. Add the vinegar and stew down over a medium heat for about 6 minutes until reduced to a rough relish consistency. Remove from the heat, stir in the basil and season well. Tip into a serving bowl and set aside
+\n\nCombine the ingredients for the mustard mayonnaise. Season, then spoon into a serving bowl and set aside
+\n\nTo make the toast, heat a griddle pan until smoking hot. Drizzle the sliced ciabatta with the olive oil, season and then griddle for 1–2 minutes until golden on both sides. Repeat until all the bread is toasted and then place on a serving platter
+\n\nTo serve, thickly slice the rested fillet of beef, place on a platter and put on the table with the toast, mayonnaise, relish and lettuce leaves to be assembled by your guests
+</item>
+        <item>Start by slicing the croissants in half horizontally through the middle
+\n\nCrack the eggs into a mixing bowl and beat them with a fork or whisk until well mixed. Remember to wash your hands if you get raw egg on your fingers
+\n\nAdd the milk, cinnamon, vanilla extract and sugar to the bowl and whisk together until well mixed
+\n\nPut the croissant halves into the eggy mixture, allowing them to soak in the liquid for 10 seconds
+\n\nPut the butter into a large frying pan over a medium heat and when it starts to foam, cook the croissant halves for 1 to 2 minutes, then turn them over and cook for 1 to 2 minutes more. You will probably need to do this in a couple of batches
+\n\nWhile they are cooking, make the cinnamon sugar by putting the sugar and cinnamon into a bowl and mixing it up. Simple as
+\n\nSpread the cinnamon sugar over a plate and when you take the croissant halves out of the frying pan, put them onto the plate and then flip them over so they are coated all over in the sugar
+\n\nPut the croissant bottoms on to plates and put a scoop of ice cream on top, then drizzle with honey or maple syrup, if using, and put the croissant tops on top to make a sandwich
+</item>
+        <item>To make the pancake batter, put the coconut into a blender and blitz for 1 minute or until it becomes finely chopped. Add the flour and baking powder and pulse for a couple of seconds to combine. Pour into a mixing bowl
+\n\nMake a well in the flour and add the egg. Stir into the flour, then add the coconut milk and honey, mixing until a smooth batter forms. Cover and leave to rest for 15 minutes
+\n\nMeanwhile, make the lime syrup. Put the sugar, 150ml water, the lime juice and zest into a small saucepan or frying pan. Bring to a gentle simmer and stir until the sugar has dissolved. Continue to simmer for 10 minutes until the liquid has reduced slightly and developed a syrupy consistency. Taste and add a little more lime zest if necessary. Leave to cool until just warm
+\n\nTo cook the pancakes, heat a little oil in a large non-stick frying pan, swirling it around to cover the bottom. Place heaped tablespoons of batter in the pan (you will probably have to do this in batches) and cook over a medium-low heat for 2–3 minutes until golden. Turn over with a palette knife and repeat on the other side until golden and cooked through. Remove and set aside in a warm place while you cook the remaining batter
+\n\nPeel the mango and cut the flesh into thin slices. Serve the pancakes with slices of mango and a drizzle of lime syrup on top
+</item>
+        <item>Preheat the oven to 220°C/Gas 7
+\n\nFirst prepare the marinade by combining all the ingredients with a good grinding of black pepper and a dash of oil. Rub the marinade into the chicken pieces, massaging it into the scored meat. Leave to marinate for at least 1 hour (or, better still, overnight)
+\n\nHeat a large ovenproof pan over a medium-high heat and add a dash of oil. Fry the chicken pieces for about 10 minutes until golden brown on all sides. Add the Worcestershire sauce and cook for 2 minutes
+\n\nCover with an ovenproof lid or foil and place in the preheated oven for 20 minutes until cooked through (if your pan isn’t ovenproof, simply transfer the chicken to a roasting tray). Remove the foil for the last 5 minutes if the chicken needs colouring a little more
+\n\nServe the chicken hot with rice
+</item>
+        <item>Preheat the oven to 220°C/Gas 7
+\n\nLay the joint, skin side down, on a chopping board and cut three-quarters of the way into the flesh lengthways from top to bottom. Open the meat out to form a long rectangle and season with salt and pepper
+\n\nArrange the slices of cheese and the membrillo along the centre of the meat. Scatter the leaves from 1 sage sprig on top, and roll the meat up to enclose the stuffing. Tie at 3cm intervals along the length of the meat with string
+\n\nPlace the thyme and remaining sage in a hob-proof roasting tray with the garlic. Lay the pork on top, skin side up. Drizzle with olive oil and season generously with salt and pepper
+\n\nTransfer the roasting tray to the preheated oven and cook for 20 minutes until the skin is crispy and golden. Turn the oven down to 180°/Gas 4 and cook for a further 50 minutes until the pork is just cooked through. Remove the pork from the tin and set aside on a serving dish to rest
+\n\nPut the roasting tray on the hob. Pour in the sherry and bring to the boil, scraping up any bits stuck in the bottom of the tray. Lower the heat, squash the garlic and remove the herbs. Add any resting juices from the meat
+\n\nTo serve, carve the pork into thick slices, strain the sauce and pour it over the meat
+</item>
+        <item>Preheat the oven to 180°C/Gas 4
+\n\nFirst make the stuffing. Heat a little olive oil in a large frying pan, add the chorizo and fry for about 3 minutes until turning golden. Add the onion and cook for a minute or two until softened, then add the garlic. Cook for a further couple of minutes before adding the leaves from 3 thyme sprigs. Stir in the cannellini beans, seasoning well. Cook for a minute or two to warm through. Add the tomatoes and a couple of tablespoons of the oil they are stored in. Stir to combine, then remove from the heat
+\n\nNow prepare the chicken. Season the cavity with salt and pepper, then fill with the chorizo stuffing and place a whole lemon at the cavity opening, tucking any excess skin over it. Drizzle the chicken with olive oil, sprinkle over the paprika and season with salt and pepper. Rub into the chicken skin
+\n\nPour the wine and about 200ml of water into a roasting tray and season. Add the chicken and the remaining sprigs of thyme, then cover with foil and roast for 1 hour in the preheated oven
+\n\nAfter 1 hour, remove the foil from the chicken, baste with the roasting juices and turn the oven up to 200°C/Gas 6. Roast for another 25–30 minutes until the skin is golden brown and the juices from the thigh run clear. Remove from the oven and rest for 15 minutes before serving
+\n\nRemove the lemon from the chicken cavity, and squeeze the juice into the pan juices. Whisk together to create a light gravy – if you prefer a thicker gravy, reduce over a high heat
+</item>
+    </string-array>
+
+    <string-array name="ingredient_1">
+        <item>1 head of garlic (about 12 cloves), cut in half</item>
+        <item>5 thyme sprigs, leaves picked, plus 1 extra</item>
+        <item>1.8kg beef sirloin</item>
+        <item>3–4 tbsp olive oil</item>
+        <item>4 large onions, sliced</item>
+        <item>150g plain flour</item>
+        <item>500ml red wine</item>
+        <item>1.5 litres hot beef stock</item>
+    </string-array>
+    <string-array name="ingredient_2">
+        <item>2 large ripe avocados, peeled and stoned</item>
+        <item>3–4 tbsp runny honey, to taste</item>
+        <item>1 tsp vanilla extract</item>
+        <item>50g raw cacao powder</item>
+    </string-array>
+    <string-array name="ingredient_3">
+        <item>4 ripe bananas, peeled</item>
+    </string-array>
+    <string-array name="ingredient_4">
+        <item>4 large courgettes, trimmed</item>
+        <item>Olive oil, for frying</item>
+        <item>Grated Parmesan cheese, to serve (optional)</item>
+    </string-array>
+    <string-array name="ingredient_5">
+        <item>Large bunch of parsley, finely chopped</item>
+        <item>Small bunch of oregano, leaves finely chopped</item>
+        <item>3 garlic cloves, peeled and crushed</item>
+        <item>2 rosemary sprigs, leaves finely chopped</item>
+        <item>1 red chilli, deseeded and finely chopped</item>
+        <item>35ml red wine vinegar</item>
+        <item>30ml rapeseed oil</item>
+        <item>1kg piece of bavette steak</item>
+        <item>4 Portobello mushrooms, brushed clean and cut into thick slices</item>
+        <item>12 whole cherry tomatoes on the vine</item>
+        <item>Sea salt and freshly ground black pepper</item>
+        <item>Watercress, to serve</item>
+    </string-array>
+    <string-array name="ingredient_6">
+        <item>250g peanut butter, smooth or crunchy</item>
+        <item>5 eggs</item>
+        <item>4 tbsp natural yoghurt</item>
+        <item>3 tbsp Raspberry Chia Seed Jam, plus extra for serving</item>
+        <item>1 tbsp rapeseed oil, for frying</item>
+        <item>4 bananas, peeled and sliced</item>
+        <item>Maple syrup, to serve (optional)</item>
+    </string-array>
+    <string-array name="ingredient_7">
+        <item>2cm piece of fresh root ginger, finely sliced</item>
+        <item>2 garlic cloves, peeled and finely sliced</item>
+        <item>3 tbsp soy sauce</item>
+        <item>2 tbsp maple syrup</item>
+        <item>1 tbsp mirin (rice wine)</item>
+        <item>Olive oil</item>
+        <item>4 salmon fillets (about 500g in total)</item>
+        <item>Sea salt and freshly ground pepper</item>
+    </string-array>
+    <string-array name="ingredient_8">
+        <item>75g walnuts</item>
+        <item>1 small romaine lettuce, finely shredded</item>
+        <item>200g cooked, peeled king prawns, deveined if necessary</item>
+        <item>1 celery heart, chopped</item>
+        <item>1 eating apple e.g. Granny Smith, cored and cut into 1cm pieces</item>
+        <item>100g seedless green grapes, washed and halved</item>
+    </string-array>
+    <string-array name="ingredient_9">
+        <item>200g Puy lentils</item>
+        <item>1 bay leaf</item>
+        <item>2 thyme sprigs</item>
+        <item>800ml vegetable stock (or water)</item>
+        <item>1 tbsp olive oil</item>
+        <item>200g chestnut mushrooms, cut into eighths</item>
+        <item>200g large flat or Portobello mushrooms, sliced</item>
+        <item>2 garlic cloves, peeled and finely chopped</item>
+        <item>4 x 100g wild salmon fillets</item>
+        <item>100g rocket leaves</item>
+        <item>Sea salt and freshly ground black pepper</item>
+    </string-array>
+    <string-array name="ingredient_10">
+        <item>3kg unsmoked boneless gammon joint</item>
+        <item>4 medium carrots, peeled and roughly chopped </item>
+        <item>1 leek, cleaned and roughly chopped</item>
+        <item>1 onion, peeled and roughly chopped </item>
+        <item>1 tsp black peppercorns, lightly crushed</item>
+        <item>1 tsp coriander seeds, lightly crushed</item>
+        <item>1 cinnamon stick, broken in half </item>
+        <item>3 bay leaves handful of cloves</item>
+    </string-array>
+    <string-array name="ingredient_11">
+        <item>320–375g ready-rolled all-butter puff pastry</item>
+        <item>3 tbsp icing sugar, plus extra to dust</item>
+        <item>Seeds from 2 vanilla pods</item>
+        <item>600ml double cream</item>
+        <item>Zest of 1 orange</item>
+        <item>½ tbsp orange-flavoured liqueur, e.g. Grand Marnier</item>
+        <item>200g fresh raspberries</item>
+    </string-array>
+    <string-array name="ingredient_12">
+        <item>2 beef sirloin steaks, 200–250g each</item>
+        <item>Olive oil, for frying</item>
+        <item>2 carrots, trimmed and peeled</item>
+        <item>6 radishes, trimmed and finely sliced</item>
+        <item>200g cherry tomatoes, sliced in half</item>
+        <item>Bunch of mint, leaves only, shredded</item>
+        <item>1 small banana shallot, peeled and finely sliced</item>
+        <item>3 spring onions, trimmed and shredded</item>
+        <item>½ large cucumber, trimmed, peeled, deseeded and sliced</item>
+        <item>2 baby gem lettuces, shredded</item>
+        <item>Sea salt and freshly ground black pepper</item>
+        <item>4 tbsp skinned peanuts, to garnish </item>
+    </string-array>
+    <string-array name="ingredient_13">
+        <item>200g almonds, skins on</item>
+        <item>3 tbsp coconut oil</item>
+        <item>2 tbsp coconut sugar or golden caster sugar</item>
+        <item>250g low-fat cream cheese, at room temperature</item>
+        <item>300g Greek yoghurt</item>
+        <item>1–2 tbsp coconut sugar, maple syrup or runny honey, to taste</item>
+        <item>1 tbsp lemon juice</item>
+        <item>1 tbsp vanilla extract</item>
+        <item>200g frozen blueberries, defrosted</item>
+        <item>Pinch of salt</item>
+    </string-array>
+    <string-array name="ingredient_14">
+        <item>1 ripe pineapple</item>
+        <item>4 tbsp caster sugar, plus a little extra for sprinkling</item>
+        <item>1 vanilla pod, seeds removed</item>
+        <item>Pinch of Chinese five-spice powder</item>
+        <item>20g butter, cut in half</item>
+        <item>150ml double cream</item>
+    </string-array>
+    <string-array name="ingredient_15">
+        <item>Olive oil, for frying</item>
+        <item>700g fillet of beef</item>
+        <item>1 whole head of garlic, cut in half horizontally</item>
+        <item>3–4 thyme sprigs</item>
+        <item>Butter</item>
+        <item>Sea salt and freshly ground black pepper</item>
+        <item>1 baby gem lettuce, to serve</item>
+    </string-array>
+    <string-array name="ingredient_16">
+        <item>4 croissants</item>
+        <item>4 eggs</item>
+        <item>75ml milk</item>
+        <item>1/2 tsp ground cinnamon</item>
+        <item>1/2 tsp vanilla extract</item>
+        <item>2 tbsp caster sugar</item>
+        <item>50g butter</item>
+        <item>4 scoops of vanilla ice cream</item>
+        <item>2–3 tbsp honey or maple syrup</item>
+        <item>75g caster sugar</item>
+        <item>1 tsp ground cinnamon</item>
+    </string-array>
+    <string-array name="ingredient_17">
+        <item>100g unsweetened desiccated coconut</item>
+        <item>100g plain flour</item>
+        <item>1½ tsp baking powder</item>
+        <item>1 egg, beaten</item>
+        <item>250ml coconut milk (shake the tin before measuring to distribute the solids evenly)</item>
+        <item>1 tbsp runny honey</item>
+        <item>Oil, for frying</item>
+        <item>1 ripe mango</item>
+        <item>150g caster sugar</item>
+        <item>Juice of 4 limes, finely grated zest of 1</item>
+    </string-array>
+    <string-array name="ingredient_18">
+        <item>4 large chicken legs, skin on, cut into drumsticks and thighs and scored</item>
+        <item>Olive oil, for frying</item>
+        <item>2 tbsp Worcestershire sauce</item>
+        <item>Rice, to serve</item>
+        <item>4–5 thyme sprigs, to garnish</item>
+        <item>1–2 Scotch bonnet chillies, deseeded and finely chopped</item>
+        <item>2 garlic cloves, peeled and crushed</item>
+        <item>1 tsp ground cloves</item>
+        <item>1 tsp ground cinnamon</item>
+        <item>1 tsp ground nutmeg</item>
+        <item>2 tsp ground allspice</item>
+        <item>5–7 thyme sprigs, leaves only (you will need about 2 tbsp)</item>
+        <item>Freshly ground black pepper</item>
+        <item>Olive oil</item>
+    </string-array>
+    <string-array name="ingredient_19">
+        <item>1kg pork loin roasting joint, skin scored</item>
+        <item>175g Manchego cheese, finely sliced</item>
+        <item>150g membrillo</item>
+        <item>2 sage sprigs</item>
+        <item>Olive oil, for drizzling</item>
+        <item>1 head of garlic, cut in half horizontally</item>
+        <item>1 thyme sprig</item>
+        <item>200ml medium-dry sherry</item>
+        <item>Sea salt and freshly ground pepper</item>
+    </string-array>
+    <string-array name="ingredient_20">
+        <item>1 large free-range chicken, about 2kg</item>
+        <item>1 lemon</item>
+        <item>Olive oil, for drizzling</item>
+        <item>1 heaped tsp paprika (sweet or smoked, as preferred)</item>
+        <item>400ml white wine</item>
+        <item>Olive oil, for frying</item>
+        <item>150–200g chorizo, skinned and cubed</item>
+        <item>1 onion, peeled and finely chopped</item>
+        <item>2 garlic cloves, peeled and finely sliced</item>
+        <item>Bunch of thyme sprigs</item>
+        <item>2 x 400g tins cannellini beans, drained and rinsed</item>
+        <item>200g semi-dried/sunblush tomatoes in oil</item>
+        <item>Sea salt and freshly ground black pepper</item>
+    </string-array>
+
+    <string-array name="recipe_durations">
+        <item>1hr 10mins</item>
+        <item>2hrs 23mins</item>
+        <item>1hr 59mins</item>
+        <item>3hr 15mins</item>
+        <item>1hr 29mins</item>
+        <item>38mins</item>
+        <item>1hr 10mins</item>
+        <item>45mins</item>
+        <item>1hr 5mins</item>
+        <item>55mins</item>
+        <item>40mins</item>
+        <item>15mins</item>
+        <item>1hr 29mins</item>
+        <item>50mins</item>
+        <item>1hr 20mins</item>
+        <item>35mins</item>
+        <item>1hr 10mins</item>
+        <item>25mins</item>
+        <item>1hr 40mins</item>
+        <item>45mins</item>
+    </string-array>
+</resources>
