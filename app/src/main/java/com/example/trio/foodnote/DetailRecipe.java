@@ -2,6 +2,9 @@ package com.example.trio.foodnote;
 
 import android.content.Intent;
 import android.media.Image;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -50,7 +53,10 @@ public class DetailRecipe extends AppCompatActivity {
         tv_duration.setText(recipe.getDuration());
         tv_procedures.setText(recipe.getProcedures());
 
+        setTitle(recipe.getName());
+
         ingredientAdapter = new IngredientAdapter(this, recipe.getIngredients());
+        rv_ingredients.setFocusable(false);
         rv_ingredients.setAdapter(ingredientAdapter);
         rv_ingredients.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
@@ -108,20 +114,21 @@ public class DetailRecipe extends AppCompatActivity {
     public class FavOnClickListener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
+            String msg;
             ArrayList<Integer> fav_list = FavouriteData.getData();
-            int index = RecipeData.getData(getApplicationContext()).indexOf(recipe);
+            Integer index = RecipeData.getData(getApplicationContext()).indexOf(recipe);
             if(fav_list.contains(index)){
                 iv_fav.setImageResource(R.drawable.ic_favorite_border);
                 fav_list.remove(index);
+                msg="Recipe has been removed from favourite list!";
             } else {
                 iv_fav.setImageResource(R.drawable.ic_favorite);
                 fav_list.add(index);
+                msg="Recipe has been added to favourite list!";
             }
 
-            for (Recipe r: RecipeData.getData(getApplicationContext())) {
-                Log.i("TAG", "var: " + r);
-            }
-            Log.i("TAG", "onClick: " + recipe);
+            Snackbar.make(view, msg, Snackbar.LENGTH_SHORT)
+                    .setAction("VIEW ALL", null).show();
         }
     }
 }
