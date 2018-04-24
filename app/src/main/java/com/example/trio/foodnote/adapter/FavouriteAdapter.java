@@ -15,6 +15,7 @@ import com.example.trio.foodnote.FavouriteFragment;
 import com.example.trio.foodnote.R;
 import com.example.trio.foodnote.model.Recipe;
 import com.example.trio.foodnote.utilities.RecipeData;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -46,7 +47,9 @@ public class FavouriteAdapter extends RecyclerView.Adapter<FavouriteAdapter.View
 
         holder.tv_recipe_name.setText(recipe.getName());
         holder.tv_duration.setText(recipe.getDuration());
-        holder.iv_thumbnail.setImageResource(recipe.getImg_preview());
+        Picasso.get().load(recipe.getImg_preview())
+                .placeholder(R.drawable.food_placeholder)
+                .into(holder.iv_thumbnail);
     }
 
     @Override

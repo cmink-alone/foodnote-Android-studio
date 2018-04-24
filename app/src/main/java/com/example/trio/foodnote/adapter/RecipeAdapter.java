@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.trio.foodnote.DetailRecipe;
 import com.example.trio.foodnote.R;
 import com.example.trio.foodnote.model.Recipe;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -44,7 +45,9 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
         Recipe recipe = recipes.get(position);
         holder.tv_recipe_name.setText(recipe.getName());
         holder.tv_duration.setText(recipe.getDuration());
-        holder.iv_thumbnail.setImageResource(recipe.getImg_preview());
+        Picasso.get().load(recipe.getImg_preview())
+                .placeholder(R.drawable.food_placeholder)
+                .into(holder.iv_thumbnail);
     }
 
     @Override

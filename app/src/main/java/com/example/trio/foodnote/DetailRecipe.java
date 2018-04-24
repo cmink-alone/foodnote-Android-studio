@@ -18,6 +18,7 @@ import com.example.trio.foodnote.adapter.IngredientAdapter;
 import com.example.trio.foodnote.model.Recipe;
 import com.example.trio.foodnote.utilities.FavouriteData;
 import com.example.trio.foodnote.utilities.RecipeData;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -30,7 +31,11 @@ public class DetailRecipe extends AppCompatActivity {
     private IngredientAdapter ingredientAdapter;
     private ImageView iv_share;
     private ImageView iv_fav;
-    public Recipe recipe;
+    private Recipe recipe;
+
+    public Recipe getRecipe(){
+        return this.recipe;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +53,9 @@ public class DetailRecipe extends AppCompatActivity {
         iv_share = (ImageView) findViewById(R.id.iv_share);
         iv_fav = (ImageView) findViewById(R.id.iv_fav);
 
-        iv_recipe.setImageResource(recipe.getImg_preview());
+        Picasso.get().load(recipe.getImg_preview())
+                .placeholder(R.drawable.food_placeholder)
+                .into(iv_recipe);
         tv_recipe_name.setText(recipe.getName());
         tv_duration.setText(recipe.getDuration());
         tv_procedures.setText(recipe.getProcedures());

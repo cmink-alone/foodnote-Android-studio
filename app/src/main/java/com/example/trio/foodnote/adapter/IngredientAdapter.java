@@ -8,7 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.trio.foodnote.DetailRecipe;
 import com.example.trio.foodnote.R;
+import com.example.trio.foodnote.model.Recipe;
+import com.example.trio.foodnote.utilities.RecipeData;
+import com.example.trio.foodnote.utilities.ShoppingCartData;
 
 import java.util.List;
 
@@ -50,6 +54,19 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.Vi
             super(itemView);
             iv_ingredient = (ImageView) itemView.findViewById(R.id.iv_ingredient);
             tv_ingredient = (TextView) itemView.findViewById(R.id.tv_ingredient);
+            context = itemView.getContext();
+
+            itemView.setOnClickListener(new IngredientClickListener());
+        }
+
+        public class IngredientClickListener implements View.OnClickListener{
+            @Override
+            public void onClick(View view) {
+                Recipe recipe = ((DetailRecipe)context).getRecipe();
+                int index = RecipeData.getData(context).indexOf(recipe);
+
+
+            }
         }
     }
 }
