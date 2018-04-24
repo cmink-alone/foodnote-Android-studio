@@ -1,20 +1,27 @@
 package com.example.trio.foodnote.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.trio.foodnote.DetailRecipe;
 import com.example.trio.foodnote.R;
 import com.example.trio.foodnote.model.Recipe;
+import com.example.trio.foodnote.model.ShoppingCart;
 import com.example.trio.foodnote.utilities.RecipeData;
 import com.example.trio.foodnote.utilities.ShoppingCartData;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by ASUS on 10/04/2018.
@@ -23,10 +30,16 @@ import java.util.List;
 public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.ViewHolder> {
     public Context context;
     public List<String> ingredients;
+    public Map<Integer, ArrayList<Integer>> shoppingCarts;
+    public Recipe recipe;
+    public int rec_index;
 
     public IngredientAdapter(Context context, List<String> ingredients) {
         this.context = context;
         this.ingredients = ingredients;
+        this.shoppingCarts = ShoppingCartData.getData();
+        this.recipe = ((DetailRecipe)context).getRecipe();
+        this.rec_index = RecipeData.getData(context).indexOf(this.recipe);
     }
 
     @Override
@@ -39,6 +52,21 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.Vi
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.tv_ingredient.setText(ingredients.get(position));
+        Integer ing_index = position;
+        ArrayList<Integer> ingredients;
+        if(shoppingCarts.containsKey(rec_index)){
+            ingredients = shoppingCarts.get(rec_index);
+            if(ingredients.contains(ing_index)){
+                holder.iv_ingredient.setImageResource(R.drawable.ic_check_circle);
+                holder.iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorAccent), android.graphics.PorterDuff.Mode.SRC_IN);
+            } else {
+                holder.iv_ingredient.setImageResource(R.drawable.ic_add_circle);
+                holder.iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN);
+            }
+        } else {
+            holder.iv_ingredient.setImageResource(R.drawable.ic_add_circle);
+            holder.iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN);
+        }
     }
 
     @Override
@@ -62,10 +90,36 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.Vi
         public class IngredientClickListener implements View.OnClickListener{
             @Override
             public void onClick(View view) {
-                Recipe recipe = ((DetailRecipe)context).getRecipe();
-                int index = RecipeData.getData(context).indexOf(recipe);
+                Integer ing_index = getAdapterPosition();
+                ArrayList<Integer> ingredients;
+                String msg ="";
 
+                if(shoppingCarts.containsKey(rec_index)){
+                    ingredients = shoppingCarts.get(rec_index);
+                    if(ingredients.contains(ing_index)){
+                        //delete
+                        ingredients.remove(ing_index);
+                        msg = "Ingredient has been removed from shopping cart!";
+                        iv_ingredient.setImageResource(R.drawable.ic_add_circle);
+                        iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN);
+                    } else {
+                        //add new to the existing
+                        ingredients.add(ing_index);
+                        msg = "Ingredient has been added to shopping cart!";
+                        iv_ingredient.setImageResource(R.drawable.ic_check_circle);
+                        iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorAccent), android.graphics.PorterDuff.Mode.SRC_IN);
+                    }
+                } else {
+                    ingredients = new ArrayList<>();
+                    ingredients.add(ing_index);
+                    shoppingCarts.put(rec_index, ingredients);
+                    msg = "Ingredient has been added to shopping cart!";
+                    iv_ingredient.setImageResource(R.drawable.ic_check_circle);
+                    iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorAccent), android.graphics.PorterDuff.Mode.SRC_IN);
+                }
 
+                Snackbar.make(view, msg, Snackbar.LENGTH_SHORT)
+                        .setAction("VIEW ALL", null).show();
             }
         }
     }

@@ -32,6 +32,7 @@ public class DetailRecipe extends AppCompatActivity {
     private ImageView iv_share;
     private ImageView iv_fav;
     private Recipe recipe;
+    private ArrayList<Integer> fav_list;
 
     public Recipe getRecipe(){
         return this.recipe;
@@ -71,7 +72,7 @@ public class DetailRecipe extends AppCompatActivity {
         iv_fav.setOnClickListener(new FavOnClickListener());
 
 
-        ArrayList<Integer> fav_list = FavouriteData.getData();
+        fav_list = FavouriteData.getData();
         if(fav_list.contains(RecipeData.getData(this).indexOf(recipe))){
             iv_fav.setImageResource(R.drawable.ic_favorite);
         } else {
@@ -99,13 +100,6 @@ public class DetailRecipe extends AppCompatActivity {
         return msg;
     }
 
-    public boolean checkBackgroundFav(View view, int res){
-        if(view.getBackground().getConstantState() == getResources().getDrawable(res).getConstantState()) {
-            return true;
-        }
-        return false;
-    }
-
     public class SharedOnClickListener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
@@ -122,7 +116,6 @@ public class DetailRecipe extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             String msg;
-            ArrayList<Integer> fav_list = FavouriteData.getData();
             Integer index = RecipeData.getData(getApplicationContext()).indexOf(recipe);
             if(fav_list.contains(index)){
                 iv_fav.setImageResource(R.drawable.ic_favorite_border);
