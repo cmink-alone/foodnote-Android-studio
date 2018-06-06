@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,7 +14,6 @@ import android.widget.RelativeLayout;
 
 import com.example.trio.foodnote.adapter.ShoppingListAdapter;
 import com.example.trio.foodnote.model.Ingredient;
-import com.example.trio.foodnote.model.ShoppingCart;
 import com.example.trio.foodnote.utilities.ShoppingCartData;
 
 import java.util.ArrayList;
@@ -138,5 +136,19 @@ public class ShoppingCartFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        shoppingAdapter.notifyDataSetChanged();
+        if(data.size() > 0) {
+            rv_shopping_cart.setVisibility(View.VISIBLE);
+            view_empty.setVisibility(View.GONE);
+        } else {
+            rv_shopping_cart.setVisibility(View.GONE);
+            view_empty.setVisibility(View.VISIBLE);
+        }
     }
 }

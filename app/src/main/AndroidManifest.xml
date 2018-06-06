@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/recipe"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/recipe"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -21,7 +21,10 @@
         </activity>
         <activity
             android:name=".DetailRecipe"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity" ></activity>
     </application>
 
 </manifest>

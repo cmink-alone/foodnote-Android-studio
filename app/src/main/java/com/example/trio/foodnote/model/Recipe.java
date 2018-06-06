@@ -18,8 +18,9 @@ public class Recipe implements Serializable {
     private String procedures;
     private String contributor;
     private int img_preview;
+    private ArrayList<String> labels = new ArrayList<>();
 
-    public Recipe(int id, String name, String duration, int serving, ArrayList<String> ingredients, String procedures, String contributor, int img_preview) {
+    public Recipe(int id, String name, String duration, int serving, ArrayList<String> ingredients, String procedures, String contributor, int img_preview, ArrayList<String> labels) {
         this.id = id;
         this.name = name;
         this.duration = duration;
@@ -28,6 +29,15 @@ public class Recipe implements Serializable {
         this.procedures = procedures;
         this.contributor = contributor;
         this.img_preview = img_preview;
+        this.labels = labels;
+    }
+
+    public ArrayList<String> getLabels() {
+        return labels;
+    }
+
+    public void setLabels(ArrayList<String> labels) {
+        this.labels = labels;
     }
 
     public int getId() {

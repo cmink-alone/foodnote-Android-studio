@@ -42,6 +42,29 @@ public class RecipeData implements Serializable {
                 R.array.ingredient_20
         };
 
+        int[] lbl_ids = {
+                R.array.label_1,
+                R.array.label_2,
+                R.array.label_3,
+                R.array.label_4,
+                R.array.label_5,
+                R.array.label_6,
+                R.array.label_7,
+                R.array.label_8,
+                R.array.label_9,
+                R.array.label_10,
+                R.array.label_11,
+                R.array.label_12,
+                R.array.label_13,
+                R.array.label_14,
+                R.array.label_15,
+                R.array.label_16,
+                R.array.label_17,
+                R.array.label_18,
+                R.array.label_19,
+                R.array.label_20
+        };
+
         int[] res_ids = {
                 R.drawable.food1,
                 R.drawable.food2,
@@ -69,18 +92,24 @@ public class RecipeData implements Serializable {
         ArrayList<String[]> ingredients = new ArrayList<>();
         String[] durations = context.getResources().getStringArray(R.array.recipe_durations);
         String[] direntions = context.getResources().getStringArray(R.array.recipe_directions);
+        ArrayList<String[]> labels = new ArrayList<>();
 
         int i=0;
         for (int ing_id: ing_ids){
             ingredients.add(context.getResources().getStringArray(ing_id));
+            labels.add(context.getResources().getStringArray(lbl_ids[i]));
             i++;
         }
 
         i=0;
         for (String name : names){
             ArrayList<String> ingredient_row = new ArrayList<>();
+            ArrayList<String> label_row = new ArrayList<>();
             for(String ingredient: ingredients.get(i)){
                 ingredient_row.add(ingredient);
+            }
+            for(String label: labels.get(i)){
+                label_row.add(label);
             }
             recipes.add(new Recipe(
                     i,
@@ -90,7 +119,8 @@ public class RecipeData implements Serializable {
                     ingredient_row,
                     direntions[i],
                     "alex",
-                    res_ids[i]
+                    res_ids[i],
+                    label_row
                     )
             );
             i++;

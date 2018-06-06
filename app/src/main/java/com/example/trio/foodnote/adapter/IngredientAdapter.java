@@ -1,7 +1,6 @@
 package com.example.trio.foodnote.adapter;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -10,13 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.trio.foodnote.DetailRecipe;
 import com.example.trio.foodnote.R;
 import com.example.trio.foodnote.model.Ingredient;
 import com.example.trio.foodnote.model.Recipe;
-import com.example.trio.foodnote.model.ShoppingCart;
 import com.example.trio.foodnote.utilities.RecipeData;
 import com.example.trio.foodnote.utilities.ShoppingCartData;
 
@@ -103,23 +100,19 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.Vi
                         //delete
                         ingredients.remove(ingredient);
                         msg = "Ingredient has been removed from shopping cart!";
-                        iv_ingredient.setImageResource(R.drawable.ic_add_circle);
-                        iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN);
                     } else {
                         //add new to the existing
                         ingredients.add(ingredient);
                         msg = "Ingredient has been added to shopping cart!";
-                        iv_ingredient.setImageResource(R.drawable.ic_check_circle);
-                        iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorAccent), android.graphics.PorterDuff.Mode.SRC_IN);
                     }
                 } else {
                     ingredients = new ArrayList<>();
                     ingredients.add(ingredient);
                     shoppingCarts.put(rec_index, ingredients);
                     msg = "Ingredient has been added to shopping cart!";
-                    iv_ingredient.setImageResource(R.drawable.ic_check_circle);
-                    iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorAccent), android.graphics.PorterDuff.Mode.SRC_IN);
                 }
+
+                notifyDataSetChanged();
 
                 Snackbar.make(view, msg, Snackbar.LENGTH_SHORT)
                         .setAction("VIEW ALL", null).show();

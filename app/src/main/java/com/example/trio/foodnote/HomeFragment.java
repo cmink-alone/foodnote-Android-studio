@@ -11,12 +11,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.trio.foodnote.adapter.CategoryAdapter;
 import com.example.trio.foodnote.adapter.LabelAdapter;
 import com.example.trio.foodnote.adapter.RecipeAdapter;
 import com.example.trio.foodnote.model.Recipe;
 import com.example.trio.foodnote.utilities.RecipeData;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -35,7 +38,7 @@ public class HomeFragment extends Fragment {
 
     RecyclerView rc_label;
     RecyclerView rc_selected;
-
+    RecyclerView rv_category;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -75,7 +78,14 @@ public class HomeFragment extends Fragment {
         labels.add("Main Dishes");
         labels.add("Side Dishes");
 
+        Map<String, Integer> categories = new HashMap<>();
+        categories.put("Foods", R.drawable.label_food);
+        categories.put("Ice Creams", R.drawable.label_ice);
+        categories.put("Cakes", R.drawable.label_cake);
+        categories.put("Fruits", R.drawable.label_fruit);
+
         LabelAdapter labelAdapter = new LabelAdapter(getActivity(), labels);
+
 
         rc_label = (RecyclerView) getView().findViewById(R.id.rc_label);
         rc_label.setAdapter(labelAdapter);
@@ -89,6 +99,14 @@ public class HomeFragment extends Fragment {
         rc_selected = (RecyclerView) getView().findViewById(R.id.rc_selected);
         rc_selected.setAdapter(recipeAdapter);
         rc_selected.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+
+
+        CategoryAdapter categoryAdapter = new CategoryAdapter(getActivity(), categories);
+
+        rv_category = (RecyclerView) getView().findViewById(R.id.rv_category);
+        rv_category.setAdapter(categoryAdapter);
+        rv_category.setFocusable(false);
+        rv_category.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
     }
 
     @Override

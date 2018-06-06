@@ -1,6 +1,7 @@
 package com.example.trio.foodnote.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.trio.foodnote.R;
+import com.example.trio.foodnote.SearchActivity;
 
 import java.util.List;
 
@@ -49,6 +51,17 @@ public class LabelAdapter extends RecyclerView.Adapter<LabelAdapter.ViewHolder> 
             super(itemView);
 
             tv_label = (TextView) itemView.findViewById(R.id.tv_label);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position  =   getAdapterPosition();
+
+                    Intent search_activity = new Intent(v.getContext(), SearchActivity.class);
+                    search_activity.putExtra("LabelExtra", labels.get(position));
+                    v.getContext().startActivity(search_activity);
+                }
+            });
         }
     }
 }

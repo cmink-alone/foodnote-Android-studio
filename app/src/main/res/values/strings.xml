@@ -373,6 +373,90 @@ Assemble the millefeuille just before serving. Take the piping bag from the frid
         <item>Sea salt and freshly ground black pepper</item>
     </string-array>
 
+
+    <string-array name="label_1">
+        <item>Main Dishes</item>
+        <item>Beef</item>
+        <item>Foods</item>
+        <item>Roasted</item>
+    </string-array>
+    <string-array name="label_2">
+        <item>Appetizers</item>
+        <item>Chocolate</item>
+        <item>Avocado</item>
+        <item>Fruits</item>
+        <item>Ice Creams</item>
+    </string-array>
+    <string-array name="label_3">
+        <item>Appetizers</item>
+        <item>Banana</item>
+        <item>Fruits</item>
+        <item>Ice Creams</item>
+    </string-array>
+    <string-array name="label_4">
+        <item>Main Dishes</item>
+    </string-array>
+    <string-array name="label_5">
+        <item>Side Dishes</item>
+    </string-array>
+    <string-array name="label_6">
+        <item>Side Dishes</item>
+    </string-array>
+    <string-array name="label_7">
+        <item>Main Dishes</item>
+    </string-array>
+    <string-array name="label_8">
+        <item>Side Dishes</item>
+    </string-array>
+    <string-array name="label_9">
+        <item>Main Dishes</item>
+    </string-array>
+    <string-array name="label_10">
+        <item>Main Dishes</item>
+    </string-array>
+    <string-array name="label_11">
+        <item>Appetizers</item>
+        <item>Cakes</item>
+    </string-array>
+    <string-array name="label_12">
+        <item>Main Dishes</item>
+    </string-array>
+    <string-array name="label_13">
+        <item>Appetizers</item>
+        <item>Cakes</item>
+    </string-array>
+    <string-array name="label_14">
+        <item>Appetizers</item>
+        <item>Cakes</item>
+    </string-array>
+    <string-array name="label_15">
+        <item>Main Dishes</item>
+        <item>Steak</item>
+    </string-array>
+    <string-array name="label_16">
+        <item>Appetizers</item>
+        <item>Cakes</item>
+        <item>Ice Creams</item>
+    </string-array>
+    <string-array name="label_17">
+        <item>Appetizers</item>
+        <item>Cakes</item>
+    </string-array>
+    <string-array name="label_18">
+        <item>Main Dishes</item>
+        <item>Chicken</item>
+        <item>Foods</item>
+    </string-array>
+    <string-array name="label_19">
+        <item>Main Dishes</item>
+        <item>Pork</item>
+    </string-array>
+    <string-array name="label_20">
+        <item>Main Dishes</item>
+        <item>Chicken</item>
+        <item>Foods</item>
+    </string-array>
+
     <string-array name="recipe_durations">
         <item>1hr 10mins</item>
         <item>2hrs 23mins</item>
@@ -395,4 +479,5 @@ Assemble the millefeuille just before serving. Take the piping bag from the frid
         <item>1hr 40mins</item>
         <item>45mins</item>
     </string-array>
+    <string name="title_activity_search">SearchActivity</string>
 </resources>
