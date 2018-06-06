@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="8dp"
-    android:paddingLeft="18dp"
     android:paddingTop="8dp">
 
     <ImageView
@@ -13,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginRight="16dp"
-        android:src="@drawable/ic_add_circle"
+        tools:src="@drawable/ic_add_circle"
         android:tint="@color/colorPrimary" />
 
     <TextView

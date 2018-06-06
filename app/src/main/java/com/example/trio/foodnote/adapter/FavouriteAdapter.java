@@ -72,7 +72,6 @@ public class FavouriteAdapter extends RecyclerView.Adapter<FavouriteAdapter.View
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
                     int position  =   getAdapterPosition();
                     int fav_index = fav_indexes.get(position);
 

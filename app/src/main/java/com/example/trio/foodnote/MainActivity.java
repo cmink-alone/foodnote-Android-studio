@@ -17,7 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, HomeFragment.OnFragmentInteractionListener, FavouriteFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener, HomeFragment.OnFragmentInteractionListener, FavouriteFragment.OnFragmentInteractionListener, ShoppingCartFragment.OnFragmentInteractionListener {
 
 
     @Override
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity
                 setTitle("Favourites");
                 break;
             case R.id.nav_cart:
-                fragment = new HomeFragment();
+                fragment = new ShoppingCartFragment();
                 setTitle("Shopping Cart");
                 break;
             case R.id.nav_share:

@@ -119,7 +119,8 @@ public class DetailRecipe extends AppCompatActivity {
             Integer index = RecipeData.getData(getApplicationContext()).indexOf(recipe);
             if(fav_list.contains(index)){
                 iv_fav.setImageResource(R.drawable.ic_favorite_border);
-                fav_list.remove(index);
+
+
                 msg="Recipe has been removed from favourite list!";
             } else {
                 iv_fav.setImageResource(R.drawable.ic_favorite);

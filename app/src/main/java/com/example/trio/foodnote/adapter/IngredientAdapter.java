@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.trio.foodnote.DetailRecipe;
 import com.example.trio.foodnote.R;
+import com.example.trio.foodnote.model.Ingredient;
 import com.example.trio.foodnote.model.Recipe;
 import com.example.trio.foodnote.model.ShoppingCart;
 import com.example.trio.foodnote.utilities.RecipeData;
@@ -30,7 +31,7 @@ import java.util.Map;
 public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.ViewHolder> {
     public Context context;
     public List<String> ingredients;
-    public Map<Integer, ArrayList<Integer>> shoppingCarts;
+    public Map<Integer, ArrayList<Ingredient>> shoppingCarts;
     public Recipe recipe;
     public int rec_index;
 
@@ -53,10 +54,11 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.Vi
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.tv_ingredient.setText(ingredients.get(position));
         Integer ing_index = position;
-        ArrayList<Integer> ingredients;
+        Ingredient ingredient = new Ingredient(ing_index, false);
+        ArrayList<Ingredient> ingredients;
         if(shoppingCarts.containsKey(rec_index)){
             ingredients = shoppingCarts.get(rec_index);
-            if(ingredients.contains(ing_index)){
+            if(ingredients.contains(ingredient)){
                 holder.iv_ingredient.setImageResource(R.drawable.ic_check_circle);
                 holder.iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorAccent), android.graphics.PorterDuff.Mode.SRC_IN);
             } else {
@@ -91,27 +93,28 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.Vi
             @Override
             public void onClick(View view) {
                 Integer ing_index = getAdapterPosition();
-                ArrayList<Integer> ingredients;
+                Ingredient ingredient = new Ingredient(ing_index, false);
+                ArrayList<Ingredient> ingredients;
                 String msg ="";
 
                 if(shoppingCarts.containsKey(rec_index)){
                     ingredients = shoppingCarts.get(rec_index);
-                    if(ingredients.contains(ing_index)){
+                    if(ingredients.contains(ingredient)){
                         //delete
-                        ingredients.remove(ing_index);
+                        ingredients.remove(ingredient);
                         msg = "Ingredient has been removed from shopping cart!";
                         iv_ingredient.setImageResource(R.drawable.ic_add_circle);
                         iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorPrimary), android.graphics.PorterDuff.Mode.SRC_IN);
                     } else {
                         //add new to the existing
-                        ingredients.add(ing_index);
+                        ingredients.add(ingredient);
                         msg = "Ingredient has been added to shopping cart!";
                         iv_ingredient.setImageResource(R.drawable.ic_check_circle);
                         iv_ingredient.setColorFilter(ContextCompat.getColor(context, R.color.colorAccent), android.graphics.PorterDuff.Mode.SRC_IN);
                     }
                 } else {
                     ingredients = new ArrayList<>();
-                    ingredients.add(ing_index);
+                    ingredients.add(ingredient);
                     shoppingCarts.put(rec_index, ingredients);
                     msg = "Ingredient has been added to shopping cart!";
                     iv_ingredient.setImageResource(R.drawable.ic_check_circle);
