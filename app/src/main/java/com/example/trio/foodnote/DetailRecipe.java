@@ -67,6 +67,7 @@ public class DetailRecipe extends AppCompatActivity {
         rv_ingredients.setFocusable(false);
         rv_ingredients.setAdapter(ingredientAdapter);
         rv_ingredients.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        rv_ingredients.setNestedScrollingEnabled(false);
 
         iv_share.setOnClickListener(new SharedOnClickListener());
         iv_fav.setOnClickListener(new FavOnClickListener());

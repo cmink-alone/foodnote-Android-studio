@@ -89,6 +89,7 @@ public class HomeFragment extends Fragment {
 
         rc_label = (RecyclerView) getView().findViewById(R.id.rc_label);
         rc_label.setAdapter(labelAdapter);
+        rc_label.setNestedScrollingEnabled(false);
         rc_label.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
 
@@ -98,6 +99,7 @@ public class HomeFragment extends Fragment {
 
         rc_selected = (RecyclerView) getView().findViewById(R.id.rc_selected);
         rc_selected.setAdapter(recipeAdapter);
+        rc_selected.setNestedScrollingEnabled(false);
         rc_selected.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
 
 
@@ -106,6 +108,7 @@ public class HomeFragment extends Fragment {
         rv_category = (RecyclerView) getView().findViewById(R.id.rv_category);
         rv_category.setAdapter(categoryAdapter);
         rv_category.setFocusable(false);
+        rv_category.setNestedScrollingEnabled(false);
         rv_category.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
     }
 
